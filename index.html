@@ -19,21 +19,25 @@
 		<div class="stack">	
 			<h3>Get Unanswered Questions</h3>
 			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
+
 			<form class="unanswered-getter">
 				<input type="text" placeholder='e.g., "HTML" or "HTML;CSS"' name="tags" size="30" autofocus required>
 				<input type="submit" value="Submit">
 			</form>
+
 			<h3>View the Top Answerers for a Tag</h3>
 			<form class="inspiration-getter">
-				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
+				<input id="query" type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
 				<input type="submit" value="Submit">
 			</form>
 		</div>
+
 		<div class="results-container">
 			<div class="search-results"></div>
 			<div class="results"></div>
 		</div>
 	</div>
+
 	<div class="templates hidden">
 		<dl class="result question">
 			<dt>Question</dt>
@@ -45,11 +49,23 @@
 			<dt>Asker</dt>
 				<dd class="asker"></dd>
 		</dl>
+
+		<dl class="result answerers">
+			<dt>Name</dt>
+				<dd class="name"></dd>
+			<dt>Reputation Points</dt>
+				<dd class="rep"></dd>
+			<dt>Score</dt>
+				<dd class="score"></dd>
+		</dl>
+
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
 		</div>
 	</div>
+	
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/inspire.js"></script>
 </body>
 </html>
