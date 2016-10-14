@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 			var url = "http://api.stackexchange.com/2.2/tags/" + searchTerm + "/top-answerers/all_time?site=stackoverflow";
 
-			$.getJSON(url, params, function(data){
+			$.getJSONP(url, params, function(data){
 			})
 
 		.done(function(data){
