@@ -14,7 +14,7 @@ $(document).ready(function(){
 			'tag': searchTerm,
 			};
 
-			var url = "http://api.stackexchange.com/2.2/tags/" + searchTerm + "/top-answerers/all_time?site=stackoverflow";
+			var url = "https://api.stackexchange.com/2.2/tags/" + searchTerm + "/top-answerers/all_time?site=stackoverflow";
 
 			$.getJSON(url, params, function(data){
 			})
